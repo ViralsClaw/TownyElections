@@ -29,10 +29,6 @@ Towny town ranks (plot management, etc.) and/or mayorship you configure.
 ## Features
 
 - **Structured election lifecycle** — Nomination → Voting → (optional Runoff) → Concluded.
-- **Town & nation elections** — run elections per town or nation-wide with
-  `/election nation ...`, where every resident of every town in the nation may
-  stand and vote. Nation winners can receive Towny **nation ranks** and optional
-  **kingship**.
 - **Candidacy** — residents register with `/election run` and set a custom campaign
   message shown to voters.
 - **Political parties** — candidates can organize under configurable party labels,
