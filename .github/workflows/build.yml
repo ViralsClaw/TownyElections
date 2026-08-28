@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: TownyElections
-          path: target/TownyElections-*.jar
+          path: target/TownyElections-${{ github.sha }}.jar
           if-no-files-found: error
 
       - name: Publish rolling nightly release
@@ -44,4 +44,4 @@ jobs:
             --notes "Automated nightly build from commit ${{ github.sha }} (updated on every push to main)." \
             --prerelease \
             --target main \
-            target/TownyElections-*.jar
+            target/TownyElections-${{ github.sha }}.jar
