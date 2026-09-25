@@ -1,0 +1,126 @@
+prefix: "&8[&6TownyElections&8] "
+
+# General messages
+general:
+  no_permission: "&cYou do not have permission to do that!"
+  unknown_command: "&cUnknown command. Use &7/{command} &cfor help."
+  plugin_reloaded: "&aPlugin reloaded successfully!"
+  not_a_player: "&cOnly players can execute this command!"
+  invalid_args: "&cInvalid arguments! Use &7/{command} &cfor help."
+  help_header: "&6===== &eTownyElections Help &6====="
+  help_footer: "&6=============================="
+
+# Election messages
+election:
+  started: "&aElection started! Candidates can now apply."
+  already_started: "&cAn election is already in progress!"
+  not_started: "&cNo election is currently running!"
+  ended: "&aElection has ended!"
+  already_ended: "&cThis election has already ended!"
+  not_ended: "&cThe election has not ended yet!"
+  no_election: "&cThere is no active election!"
+  
+  # Candidate messages
+  candidate:
+    applied: "&aYou have successfully applied as a candidate!"
+    already_applied: "&cYou have already applied as a candidate!"
+    not_applied: "&cYou have not applied as a candidate!"
+    removed: "&aYou have been removed from the candidate list."
+    list_header: "&6===== &eCandidates &6====="
+    list_entry: "&7- {candidate}"
+    list_empty: "&cNo candidates have applied yet!"
+    list_footer: "&6======================"
+  
+  # Voting messages
+  vote:
+    voted: "&aYou have voted for {candidate}!"
+    already_voted: "&cYou have already voted in this election!"
+    cannot_vote_self: "&cYou cannot vote for yourself!"
+    candidate_not_found: "&cThat candidate does not exist!"
+    election_ended: "&cThis election has ended, you can no longer vote!"
+    not_eligible: "&cYou are not eligible to vote in this election!"
+  
+  # Winner messages
+  winner:
+    announced: "&6===== &eElection Results &6====="
+    winner_single: "&aThe winner is: {winner}"
+    winner_multiple: "&aThe winners are: {winners}"
+    no_winner: "&cNo winner was determined!"
+    tie: "&eThere was a tie between: {candidates}"
+    
+  # Time messages
+  time:
+    remaining: "&eElection ends in: {time}"
+    started_at: "&eElection started at: {time}"
+    ends_at: "&eElection ends at: {time}"
+
+# Admin messages
+admin:
+  election_started: "&aYou have started an election!"
+  election_ended: "&aYou have ended the election!"
+  candidate_added: "&a{player} has been added as a candidate!"
+  candidate_removed: "&a{player} has been removed from the candidate list!"
+  vote_reset: "&aAll votes have been reset!"
+  settings_updated: "&aSettings have been updated!"
+  
+  # Confirmation messages
+  confirm:
+    start_election: "&eAre you sure you want to start an election? Type &a/te confirm &eto confirm."
+    end_election: "&eAre you sure you want to end the election? Type &a/te confirm &eto confirm."
+    cancel: "&cAction cancelled!"
+    confirmed: "&aAction confirmed!"
+
+# Error messages
+errors:
+  election_already_exists: "&cAn election already exists!"
+  no_candidates: "&cThere are no candidates in this election!"
+  invalid_player: "&cThat player does not exist or is offline!"
+  invalid_number: "&cThat is not a valid number!"
+  config_error: "&cThere was an error with the configuration!"
+  
+# Broadcast messages
+broadcast:
+  election_start: "&6===== &eELECTION STARTED &6=====&r\n&eAn election has been started!\n&eCandidates can apply with &7/{command}&e!"
+  election_end: "&6===== &eELECTION ENDED &6=====&r\n&eThe election has ended!\n&eResults: {results}"
+  vote_reminder: "&eReminder: Election ends in {time}! Vote now with &7/{command}&e!"
+  new_candidate: "&e{player} has joined the election as a candidate!"
+
+# GUI messages (if applicable)
+gui:
+  title: "&6Towny Elections"
+  candidate_list: "&eCandidate List"
+  vote_button: "&aVote for {candidate}"
+  info_button: "&eInfo"
+  back_button: "&cBack"
+  
+# Hover messages
+hover:
+  vote: "&eClick to vote for {candidate}"
+  info: "&eClick for more information"
+  candidate: "&eCandidate: {player}\n&eVotes: {votes}"
+
+# Action bar messages
+actionbar:
+  voting_ends: "&eVoting ends in: {time}"
+  you_voted: "&aYou voted for: {candidate}"
+
+# Bossbar messages
+bossbar:
+  election_active: "&6Election Active! &eEnds in: {time}"
+  
+# Scoreboard messages
+scoreboard:
+  title: "&6Election"
+  time_left: "&eTime Left: {time}"
+  candidates: "&eCandidates: {count}"
+  your_vote: "&eYour Vote: {candidate}"
+
+# Placeholders (for other plugins)
+placeholders:
+  election_active: "Yes"
+  election_inactive: "No"
+  election_time_left: "{time}"
+  election_candidates: "{count}"
+  has_voted: "Yes"
+  has_not_voted: "No"
+  candidate_votes: "{votes}"
